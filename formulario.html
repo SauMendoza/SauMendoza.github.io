@@ -25,30 +25,47 @@
         <section>
             <h2>Envíanos tus comentarios o preguntas sobre tecnología verde y eficiencia energética en TI</h2>
             <form action="#" method="POST">
+                <!-- Campo para el nombre -->
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Saul" required>
+                
+                <!-- Campo para el apellido -->
                 <label for="apellido">Apellido</label>
                 <input type="text" id="apellido" name="apellido" placeholder="Ej: Mendoza" required>
+                
+                <!-- Campo para el teléfono -->
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1234567890" required pattern="[0-9]{10}">
+                
+                <!-- Campo para la dirección -->
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" name="direccion" placeholder="Ej: Av 123" required>
+                
+                <!-- Campo para el correo electrónico -->
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="Ej: Saul@gmail.com" required>
+                
+                <!-- Campo para seleccionar el sexo -->
                 <label for="sexo">Sexo</label>
                 <select id="sexo" name="sexo" required>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                     <option value="otro">Otro</option>
                 </select><br><br>
+                
+                <!-- Campo para la fecha de nacimiento -->
                 <label for="nacimiento">Fecha de nacimiento</label>
                 <input type="date" id="nacimiento" name="nacimiento" required><br>
-    
+                
+                <!-- Campo para el mensaje -->
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <!-- Checkbox para aceptar términos y condiciones -->
                 <label for=""><a href="terminos.html">Terminos y condiciones</a></label><br>
                 <input type="checkbox" id="terminos" name="terminos" value="aceptar" title="Acepta los términos y condiciones" required>
-              
+                
+                <!-- Botón para enviar el formulario -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
